@@ -1,0 +1,16 @@
+<div class="mdl-grid container">
+	<div class="mdl-text--color-700-grey mdl-cell mdl-cell--12-col">
+		<h6>Recent Photos<h6>
+	</div>
+	<div class="photo-card mdl-cell mdl-cell--4-col mdl-cell--2-col-phone" ng-repeat="photo in photos">
+		<a href="#/photos/{{$index}}">
+	    	<div class="recents__photo-box">
+	            <img ng-src="{{ photo.imgurl }}">
+	            <!--<p class="author">by {{ photo.author }}</p>-->
+	            <div class="photo-box__details mdl-color-text--grey-50 hide">
+	            	<h6>{{photo.upvote}}</h6>
+	            </div>
+	        </div>
+	    </a>
+	</div>
+</div>

@@ -1,0 +1,19 @@
+<div class="">
+    <div class="">
+    <div class="mdl-card__media">
+		<img ng-src="{{ detail.imgurl }}">
+    </div>
+    <div class="mdl-card__supporting-text meta">
+    	<div class="avatar">
+        	<img ng-src="{{ detail.authoravatarurl }}">
+        </div>
+        <div class="meta-area__avatar">
+			<div>{{detail.author}}</div>
+			<div>{{detail.pubdate | date}}</div>
+        </div>
+        <div class="section-spacer"></div>
+    </div>
+    <div class="mdl-card__supporting-text">
+        <p>{{detail.postcontent}}</p>
+    </div>
+</div>

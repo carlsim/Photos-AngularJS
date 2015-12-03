@@ -1,0 +1,179 @@
+@import 'components/components';
+
+body {
+    /*background-image: url('../images/bg2.jpg');*/
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    /* FIXME: Temp. workaround for vertical scrollbars */
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+    height: 100%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+p {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+/******
+*
+* Containers
+*
+*******/
+
+.wide-container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.card-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+/*****
+*
+*
+*
+******/
+
+.section-spacer {
+    flex-grow: 1;
+}
+
+.mdl-mini-footer {
+    padding-bottom: 100px;
+    background-color: #ffffff;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.social-btn {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin: 0 16px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.46;
+    border-radius: 2px;
+}
+
+.social-btn__twitter {
+    background-image: url(../images/icons/twitter.svg);
+}
+
+.social-btn__gplus {
+    background-image: url(../images/icons/google-plus.svg);
+}
+
+.social-btn__instagram {
+    background-image: url(../images/icons/instagram.svg);
+}
+
+.social-btn__linkedin {
+    background-image: url(../images/icons/linkedin.svg);
+}
+
+.social-btn__github {
+    background-image: url(../images/icons/github-box.svg);
+}
+
+.social-btn__share {
+    color: rgba(0, 0, 0, 0.54);
+    background: transparent;
+}
+.box{
+    background-color: $colorTeal500;
+    height: auto;
+    width: 100%;
+}
+.mdl-card__media{
+    margin: 0;
+}
+
+.mdl-cell{
+
+}
+
+.photo-card img{
+    cursor: pointer;
+}
+
+.photo-card img:hover{
+    opacity: .54;
+    transition: 0.07s ease-in;
+}
+
+.contact-bg {
+    margin-top: 200px;
+    background-color: $colorGrey300;
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+}
+
+.recents__photo-box{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    .photo-box__details{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.meta{
+    display: flex;
+    flex-direction: vertical;
+    .avatar{
+        height: 64px;
+        width: 64px;
+        img{
+            border-radius: 50%;
+        } 
+    }
+    .meta-area__avatar{
+        margin-left: 16px;
+        align-content: center;
+        flex: 1;
+    }
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible;
+    color: $colorGrey900;
+    opacity: 1;
+}
+
+.recents__photo-box:hover{
+    z-index: 10;
+    background-color: #000000;
+}
+
+@media all and (min-width: 990px) {
+
+}
