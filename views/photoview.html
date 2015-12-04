@@ -1,19 +1,23 @@
-<div class="">
-    <div class="">
+<div class="photo-card">
     <div class="mdl-card__media">
-		<img ng-src="{{ detail.imgurl }}">
+        <img ng-src="{{ detail.imgurl }}">
     </div>
-    <div class="mdl-card__supporting-text meta">
-    	<div class="avatar">
-        	<img ng-src="{{ detail.authoravatarurl }}">
-        </div>
-        <div class="meta-area__avatar">
-			<div>{{detail.author}}</div>
-			<div>{{detail.pubdate | date}}</div>
-        </div>
-        <div class="section-spacer"></div>
-    </div>
-    <div class="mdl-card__supporting-text">
-        <p>{{detail.postcontent}}</p>
-    </div>
+    <div class="photo-card__text-area">
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+	        <i class="material-icons">favorite_white</i>
+	    </button>
+	    <div class="mdl-card__supporting-text meta">
+	        <div class="avatar">
+	            <img ng-src="{{ detail.authoravatarurl }}">
+	        </div>
+	        <div class="meta-area__avatar">
+	            <div>{{detail.author}}</div>
+	            <div>{{detail.pubdate | date}}</div>
+	        </div>
+	        <div class="section-spacer"></div>
+	    </div>
+	    <div class="mdl-card__supporting-text">
+	        <p>{{detail.postcontent}}</p>
+	    </div>
+	</div>
 </div>
