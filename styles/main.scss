@@ -109,17 +109,18 @@ p {
     margin: 0;
 }
 
-.mdl-cell{
-
+.home-view .mdl-cell{
+    margin: 1px;
+    flex: auto;
 }
 
-.photo-card img{
-    cursor: pointer;
-}
-
-.photo-card img:hover{
-    opacity: .54;
-    transition: 0.07s ease-in;
+.photo-card__text-area{
+    position: relative;
+    .mdl-button--fab{
+        position: absolute;
+        right: 32px;
+        top: -15%;
+    }
 }
 
 .contact-bg {
@@ -175,5 +176,7 @@ p {
 }
 
 @media all and (min-width: 990px) {
-
+    .container {
+        max-width: 700px;
+    }
 }
