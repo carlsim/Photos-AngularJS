@@ -20,10 +20,12 @@ img{
     width: 100%;
     height: auto;
 }
+/*
 p {
     font-size: 16px;
     line-height: 28px;
 }
+*/
 
 /******
 *
@@ -105,6 +107,7 @@ p {
     height: auto;
     width: 100%;
 }
+
 .mdl-card__media{
     margin: 0;
 }
@@ -114,17 +117,8 @@ p {
     flex: auto;
 }
 
-.photo-card__text-area{
-    position: relative;
-    .mdl-button--fab{
-        position: absolute;
-        right: 32px;
-        top: -15%;
-    }
-}
-
 .contact-bg {
-    margin-top: 200px;
+    margin-top: 100px;
     background-color: $colorGrey300;
     width: 100%;
     padding-top: 32px;
@@ -142,22 +136,17 @@ p {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    img:hover{
+        opacity: .42;
+        transition: opacity 0.1s ease-in-out;
+    }
 }
-.meta{
-    display: flex;
-    flex-direction: vertical;
-    .avatar{
-        height: 64px;
-        width: 64px;
-        img{
-            border-radius: 50%;
-        } 
-    }
-    .meta-area__avatar{
-        margin-left: 16px;
-        align-content: center;
-        flex: 1;
-    }
+.avatar{
+    height: 64px;
+    width: 64px;
+    img{
+        border-radius: 50%;
+    } 
 }
 
 .hide{
@@ -173,6 +162,71 @@ p {
 .recents__photo-box:hover{
     z-index: 10;
     background-color: #000000;
+}
+
+.photo-card{
+    .meta{
+        display: flex;
+        flex-direction: row;
+        .avatar{
+            height: 64px;
+            width: 64px;
+            img{
+                border-radius: 50%;
+            } 
+        }
+        .meta-area__avatar{
+            margin-left: 16px;
+            align-content: center;
+            flex: 1;
+        }
+    }
+    .text-area{
+        .text-area-bg{
+            background-color: white;
+            position: relative;
+            padding: 32px;
+                .mdl-button--fab{
+                position: absolute;
+                right: 32px;
+                top: -32px;
+            }
+        }
+        .photo-content-area{
+            padding-top: 32px;
+        }
+    }
+    .comments-area{
+        .comments-area-bg{
+            padding: 32px;
+            background-color: $colorGrey200;
+        }
+        h5{
+            margin-bottom: 48px;
+        }
+    }
+}
+
+.comments-submission-area{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 48px;
+    .comment-meta-area{
+        min-height: 48px;
+        padding-left: 24px;
+    }
+    .comment-text-area{
+        margin-left: 24px;
+    }
+    .avatar-area{
+        display: flex;
+        flex-direction: row;
+        height: 48px;
+        width: 48px;
+        img{
+            border-radius: 50%;
+        }
+    }
 }
 
 @media all and (min-width: 990px) {

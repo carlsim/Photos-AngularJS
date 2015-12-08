@@ -3,9 +3,9 @@
 		<h6>Recent Photos<h6>
 	</div>
 	<div class="photo-card mdl-cell mdl-cell--4-col mdl-cell--2-col-phone" ng-repeat="photo in photos">
-		<a href="#/photos/{{$index}}">
+		<a href="#/photos/{{photo.id}}">
 	    	<div class="recents__photo-box">
-	            <img ng-src="{{ photo.imgurl }}">
+	            <img ng-src="{{ photo.imgUrl }}">
 	            <!--<p class="author">by {{ photo.author }}</p>-->
 	            <div class="photo-box__details mdl-color-text--grey-50 hide">
 	            	<h6>{{photo.upvote}}</h6>

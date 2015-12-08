@@ -1,23 +1,56 @@
-<div class="photo-card">
-    <div class="mdl-card__media">
-        <img ng-src="{{ detail.imgurl }}">
+<div class="photo-card mdl-shadow--4dp">
+    <div class="img-area">
+        <img ng-src="{{ photo.imgUrl }}">
     </div>
-    <div class="photo-card__text-area">
-        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-	        <i class="material-icons">favorite_white</i>
-	    </button>
-	    <div class="mdl-card__supporting-text meta">
-	        <div class="avatar">
-	            <img ng-src="{{ detail.authoravatarurl }}">
-	        </div>
-	        <div class="meta-area__avatar">
-	            <div>{{detail.author}}</div>
-	            <div>{{detail.pubdate | date}}</div>
-	        </div>
-	        <div class="section-spacer"></div>
-	    </div>
-	    <div class="mdl-card__supporting-text">
-	        <p>{{detail.postcontent}}</p>
-	    </div>
+    <div class="text-area mdl-color-text--grey-700">
+    	<div class="text-area-bg">
+	        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+		        <i class="material-icons">favorite_white</i>
+		    </button>
+		    <div class="meta">
+		        <div class="avatar">
+		            <img ng-src="{{ photo.authorAvatarUrl }}">
+		        </div>
+		        <div class="meta-area__avatar">
+		            <div>{{photo.author}}</div>
+		            <div>{{photo.pubDate | date}}</div>
+		        </div>
+		        <div class="section-spacer"></div>
+		        <div class="upvotes-section">
+					{{upvotes}}
+		        </div>
+		    </div>
+		    <div class="photo-content-area">
+		        <p>{{photo.postcontent}}</p>
+		    </div>
+		</div>
+	</div>
+	<div class="comments-area">
+		<div class="comments-area-bg">
+			<div class="photo-card__comments-text mdl-color-text--grey-700">
+				<h5>Comments</h5>
+				<div class="comments-submission-area" ng-repeat="comment in comments">
+					<div>
+						<div class="avatar-area">
+							<img ng-src="{{comment.avatar}}">
+						</div>
+					</div>
+					<div>
+						<div class="comment-meta-area">
+							<p>{{comment.name}}</p>
+						</div>
+						<div class="comment-text-area">
+							<p>{{comment.comment}}</p>
+						</div>
+					</div>
+				</div>
+				<form action="#">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="text" id="sample3">
+						<label class="mdl-textfield__label" for="sample3">Add a comment</label>
+					</div>
+				</form>
+			</div>
+		</div>
 	</div>
 </div>

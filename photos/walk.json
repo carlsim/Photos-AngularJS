@@ -1,0 +1,22 @@
+{
+    "id": "walk",
+    "name": "Walk",
+    "author": "Carl Sim",
+    "authorAvatarUrl": "images/me.jpg",
+    "imgUrl": "images/walk.jpg",
+    "pubDate": "2015-03-15",
+    "postcontent": "The quick brown fox jumps over the lazy dog",
+    "upvote": "15",
+    "comments": [
+    	{
+    		"name": "John Doe",
+    		"avatar": "images/me.jpg",
+    		"comment": "Wow, this is cool!"
+    	},
+		{
+			"name": "Jane Doe",
+			"avatar": "images/me.jpg",
+			"comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae obcaecati quod, ipsam asperiores earum ducimus error laudantium quisquam! Recusandae nihil necessitatibus officia velit laudantium reprehenderit provident, quisquam aut quidem in."
+		}
+    ]
+}
